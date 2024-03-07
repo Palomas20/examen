@@ -12,13 +12,13 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v3
-        
-      - name: Install dependencies
+
+      - name: setup compose
         uses: php-actions/composer@v6
-         with:
+        with:    
           command: composer install
 
-      - name: pruebas unitariass
+      - name: pruebas unitarias
         run: composer test
 
       - name: run code lint

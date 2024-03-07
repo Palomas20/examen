@@ -19,7 +19,7 @@ jobs:
           run: composer install
 
       - name: pruebas unitarias
-        run: composer test "tests"
+        run: composer test/tests
 
       - name: run code lint
         run: composer lint

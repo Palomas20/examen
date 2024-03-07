@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: setup compose
-        uses: actions/setup-composer@v1
+        uses: actions/setup-composer@v6
         with:
           composer-version: 2.7.1
 
@@ -22,7 +22,7 @@ jobs:
         run: composer install
 
       - name: pruebas unitarias
-        run: composer tests
+        run: composer test
 
       - name: run code lint
         run: composer lint

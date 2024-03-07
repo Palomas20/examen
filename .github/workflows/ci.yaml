@@ -12,10 +12,7 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v3
-
-      - name: setup compose
-        uses: php-actions/composer@v6
-
+        
       - name: Install dependencies
         uses: php-actions/composer@v6
          with:

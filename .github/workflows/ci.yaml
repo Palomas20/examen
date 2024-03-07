@@ -16,13 +16,13 @@ jobs:
       - name: setup compose
         uses: actions/setup-composer@v4
         with:
-          node-version: 20.x
+          composer-version: 2.7.1
 
       - name: install dependences
         run: composer install
 
       - name: pruebas unitarias
-        run: composer test
+        run: composer tests
 
       - name: run code lint
         run: composer lint

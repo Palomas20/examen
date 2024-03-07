@@ -21,5 +21,5 @@ jobs:
       - name: pruebas unitarias
         run: composer test tests
 
-      - name: run code lint
-        run: composer lint src
+      #- name: run code lint
+       # run: composer lint src

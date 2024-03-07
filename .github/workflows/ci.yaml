@@ -16,7 +16,7 @@ jobs:
       - name: setup compose
         uses: php-actions/composer@v6
         with:    
-          command: composer install
+          run: composer install
 
       - name: pruebas unitarias
         run: composer test

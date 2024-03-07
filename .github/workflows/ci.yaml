@@ -23,7 +23,7 @@ jobs:
          with:
           command: composer install
 
-      - name: pruebas unitarias
+      - name: pruebas unitariass
         run: composer test
 
       - name: run code lint

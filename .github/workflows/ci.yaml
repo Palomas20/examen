@@ -18,8 +18,10 @@ jobs:
         with:
           composer-version: 2.7.1
 
-      - name: install dependences
-        run: composer install
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+         with:
+          command: composer install
 
       - name: pruebas unitarias
         run: composer test
